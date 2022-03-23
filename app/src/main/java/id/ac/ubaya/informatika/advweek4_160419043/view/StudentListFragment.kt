@@ -11,10 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import id.ac.ubaya.informatika.advweek4_160419043.R
 import id.ac.ubaya.informatika.advweek4_160419043.viewmodel.ListViewModel
 import kotlinx.android.synthetic.main.fragment_student_list.*
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 class StudentListFragment : Fragment() {
     private lateinit var viewModel: ListViewModel
@@ -36,6 +32,14 @@ class StudentListFragment : Fragment() {
 
         recView.layoutManager = LinearLayoutManager(context)
         recView.adapter = studentListAdapter
+
+        refreshLayout.setOnRefreshListener {
+            recView.visibility = View.GONE
+            txtError.visibility = View.GONE
+            progressLoad.visibility = View.VISIBLE
+            viewModel.refresh()
+            refreshLayout.isRefreshing = false
+        }
 
         observeViewModel()
     }

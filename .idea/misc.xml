@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/drawable/ic_baseline_error_24.xml" value="0.23541666666666666" />
         <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/layout/fragment_detail_view_model.xml" value="0.1793478260869565" />
         <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/layout/fragment_student_detail.xml" value="0.1793478260869565" />
         <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/layout/fragment_student_list.xml" value="0.1793478260869565" />
         <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/layout/fragment_student_list_adapter.xml" value="0.1793478260869565" />
+        <entry key="..\:/Semester 4/Native Mobile/AdvWeek4_160419043/app/src/main/res/layout/student_list_item.xml" value="0.536" />
       </map>
     </option>
   </component>
